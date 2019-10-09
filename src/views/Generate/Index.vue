@@ -107,7 +107,7 @@ export default {
           this.copyModel.color = this.form.color
           this.copyModel.username = this.form.username
           this.copyModel.avatarUrl = res.data.avatar_url
-          this.copyModel.location = res.data.location
+          this.copyModel.location = res.data.location || ''
         })
         .catch((err) => {
           this.buttonIsLoading = false
